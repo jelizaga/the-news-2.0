@@ -1,4 +1,189 @@
-h1 {
+/* FONTS: */
+
+	@import url("https://fonts.googleapis.com/css?family=Righteous");
+
+/* MOBILE: */
+
+	/* BODY DEFAULTS: */
+
+		body {
+			background-color: #9999ba;
+			font-family: "Arial", "Helvetica", sans-serif;
+			padding: 0px;
+			margin: 0px;
+		}
+
+	/* HEADER: */
+
+		header {
+			background-image: url("region-img/international-tiny.png");
+			border: solid 10px;
+			border-color: #545466;
+			padding: 20px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+		h1 {
+			font-family: "Righteous", sans-serif;
+			font-size: 25px;
+			color: #FFFFFF;
+			text-shadow: 3px 3px 0px #545466;
+			text-align: center;	
+		}
+
+		#title-version {
+			font-size: 20px;
+		}
+
+
+	/* MAIN: */
+
+		main {
+			background-color: #FFFFFF;
+			border: solid 10px;
+			border-top: 0px;
+			border-color: #545466;
+			padding: 20px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+	/* SEARCH BAR: */
+
+		form {
+			margin-left: auto;
+			margin-right: auto;
+			width: 180px;
+		}
+
+		#search-bar {
+			width: 100px;
+		}
+
+
+	/* ARTICLE LIST: */
+
+/* SMALL SCREENS: */
+
+@media screen and (min-width: 400px) {
+
+	/* BODY: */
+
+		body {
+		}
+
+	/* HEADER: */
+
+		header {
+			border-width: 20px;
+			margin: 20px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		h1 {
+			font-size: 40px;
+		}
+
+	/* MAIN: */
+
+		main {
+			border-top: solid;
+			border-top-color: #545466;
+			border-width: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+	/* SEARCH BAR: */
+
+		form {
+			width: 300px;
+		}
+
+		#search-bar {
+			width: 200px;
+		}
+
+}
+
+/* SMALL+ SCREENS: */
+@media screen and (min-width: 350px) {
+
+	/* HEADER: */
+
+		header {
+			background-image: url("region-img/international-sml.png");
+		}
+
+}
+
+
+/* MEDIUM SCREENS: */
+@media screen and (min-width: 600px) {
+
+	/* HEADER: */
+
+		header {
+			background-image: url("region-img/international-med.png");
+			margin: 30px;
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+
+	/* MAIN: */
+
+		main {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+
+	/* SEARCH BAR: */
+
+		form {
+			width: 400px;
+		}
+
+		#search-bar {
+			width: 320px;
+		}
+
+}
+
+
+
+/* DESKTOP SCREENS: */
+
+@media screen and (min-width: 1000px) {
+
+	/* HEADER: */
+
+		header {
+			background-image: url("region-img/international.png");
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		h1 {
+			font-size: 60px;
+		}
+
+	/* MAIN: */
+
+		main {
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	/* FORM: */
 	
-	
+		form {
+			width: 400px;
+		}
+
 }

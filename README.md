@@ -15,5 +15,8 @@ over over-blown epidemics, disposable pseudo-news and shocking celebrity scandal
 audience won't even have to worry about the validity of what they read, as sources will
 always be cited at the bottom of each article.
 
+As this is a prototype, all articles are hard-coded into the website using html. This could
+feasibly be changed in the future.
+
 Articles & Content: Tyler Bauer, Chris Maglio
 UX: Joel Elizaga
