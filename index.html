@@ -34,9 +34,13 @@
 
 		<!-- Local CSS & JavaScript. -->
 		<link href="main.css" type="text/css" rel="stylesheet" />
+		<script src="script.js"></script>
 
-		<!-- Bootstrap. -->
+		<!-- Font Awesome. -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+		<!-- jQuery. -->
+		<script src="https://code.jquery.com/jquery.min.js"></script>
 
 	</head>
 
@@ -48,43 +52,84 @@
 			<h1>
 				The News <text id="title-version">v2.0</text>
 			</h1>
+			<text id="sub-title">
+			</text>
 
 		</header>
 
 		<!-- Main: The list of articles will populate this main content div. -->
 		<main>
 
+			<!-- Buttons for region selection. -->
+			<div id="region-select-background">
+				<ul id="region-select">
+					<li>
+						<a href="menus/international.html">
+							<i class="fa fa-globe"></i>
+							International
+						</a>
+					</li>
+					<li>
+						<a href="menus/national.html">
+							<i class="fa fa-university"></i>
+							National
+						</a>
+					</li>
+					<li>
+						<a href="menus/local.html">
+							<i class="fa fa-home"></i>
+							Local
+						</a>
+					</li>
+				</ul>
+		</div>
+
+			<!-- Buttons for topic selection. -->
+			<ul id="topic-select">
+				<li>
+					<a href="">
+						<div>
+							Politics
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div>
+							Business
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div>
+							Health
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div>
+							Weather
+						</div>
+					</a>
+				</li>
+			</ul>
+
 			<form>
 				<input id="search-bar" type="text" placeholder="Search...">
 				<input type="button" value="Search">
 			</form>
 
-			<ul id="region-select">
-				<li>
-					International
-				</li>
-				<li>
-					National
-				</li>
-				<li>
-					Local
-				</li>
-			</ul>
-
-			<ul id="topic-select">
-				<li>
-					Politics
-				</li>
-				<li>
-					Business
-				</li>
-				<li>
-					Health
-				</li>
-				<li>
-					Weather
-				</li>
-			</ul>
+			<!-- Articles are sorted below. -->
+			<div class="headline">
+				<h2>
+					The News 2.0 - Prototyping
+				</h2>
+				<text class="sub-headline">
+					posted January 29, 2016
+				</text>
+			</div>
 
 		</main>
 
