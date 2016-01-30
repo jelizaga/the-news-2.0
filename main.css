@@ -57,6 +57,10 @@
 
 	/* SEARCH BAR: */
 
+		#search-div {
+			margin-top: 20px;
+		}
+
 		form {
 			margin-left: auto;
 			margin-right: auto;
@@ -68,6 +72,16 @@
 		}
 
 	/* BUTTONS: */
+
+		.sort-by {
+			display: block;
+			color: #FFFFFF;
+			font-family: "Righteous", sans-serif;
+			font-size: 20px;
+			text-align: center;
+			padding: 10px;
+			background-color: #161f30;
+		}
 
 		#region-select {
 			padding: 0px;
@@ -94,35 +108,40 @@
 			margin-left: auto;
 			margin-right: auto;
 			font-family: "Righteous", sans-serif;
-			font-size: 20px;
+			font-size: 18px;
 			text-decoration: none;
-			padding: 20px;
+			padding: 10px;
 			transition: background-color 1s;
 		}
 
-		#topic-select li {
-			display: inline;
-			margin-left: 20px;
-			margin-right: 20px;
+		.topic-select {
+			padding: 0px;
+			margin: 0px;
 		}
 
-		#topic-select div {
-			display: inline-block;
+		.topic-select li {
+			display: block;
+			list-style-type: none;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+		.topic-select div {
+			display: block;
 			text-align: center;
-			width: 100px;
-			height: 100px;
-			border: solid 10px;
-			border-color: #161f30;
-			transition: border-color 1s;
+			background-color: #3e5587;
+			padding: 10px;
+			transition: background-color 1s;
 		}
 
-		#topic-select div:hover {
-			border-color: #3e5587;
+		.topic-select div:hover {
+			background-color: #161f30;
 		}
 
-		#topic-select a {
+		.topic-select a {
 			color: #FFFFFF;
 			font-family: "Righteous", sans-serif;
+			font-size: 18px;
 			text-decoration: none;
 			text-shadow: 1px 1px 0px #0e0e11;
 		}
@@ -173,6 +192,8 @@
 			width: 200px;
 		}
 
+	/* BUTTONS: */
+
 }
 
 /* SMALL+ SCREENS: */
@@ -200,7 +221,16 @@
 			margin-right: 20px;
 		}
 
+	/* SEARCH BAR: */
+		#search-div {
+			margin-top: 50px;
+		}
+
 	/* BUTTONS: */
+
+		.sort-by {
+			display: none;
+		}
 
 		#region-select-background {
 			background-color: #658adb;
@@ -243,8 +273,41 @@
 			transition: background-color 1s;
 		}
 
-		#topic-select li {
+		.topic-select {
+			width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.topic-select li {
 			display: inline;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.topic-select div {
+			display: inline-block;
+			text-align: center;
+			width: 80px;
+			height: 80px;
+			border: solid 10px;
+			border-color: #3e5587;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 20px;
+			margin-right: 20px;
+			transition: border-color 1s;
+		}
+
+		.topic-select div:hover {
+			border-color: #161f30;
+		}
+
+		.topic-select a {
+			color: #FFFFFF;
+			font-family: "Righteous", sans-serif;
+			text-decoration: none;
+			text-shadow: 1px 1px 0px #0e0e11;
 		}
 
 }
@@ -313,8 +376,65 @@
 			transition: background-color 1s;
 		}
 
-		#topic-select li {
+		.topic-select {
+			width: 590px;
+			height: 140px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding: 0px;
+		}
+
+		.topic-select li {
 			display: inline;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.topic-select div {
+			display: inline-block;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			border: solid 10px;
+			border-color: #3e5587;
+			transition: border-color 1s;
+		}
+
+		.topic-select div:hover {
+			border-color: #161f30;
+		}
+
+		.topic-select a {
+			color: #FFFFFF;
+			font-family: "Righteous", sans-serif;
+			text-decoration: none;
+			text-shadow: 1px 1px 0px #0e0e11;
+		}
+
+		#politics {
+			background-image: url("topic-img/pol.png");
+		}
+
+		#science {
+			background-image: url("topic-img/sci.png");
+		}
+
+		#business {
+			background-image: url("topic-img/bus.png");
+		}
+
+		#health {
+			background-image: url("topic-img/hlth.png");
+		}
+
+		#technology {
+			background-image: url("topic-img/tech.png");
+		}
+
+		#weather {
+			background-image: url("topic-img/wthr.png");
 		}
 
 }
@@ -332,6 +452,8 @@
 			max-width: 1000px;
 			margin-left: auto;
 			margin-right: auto;
+			padding-left: 0px;
+			padding-right: 0px;
 			padding-top: 80px;
 			padding-bottom: 80px;
 		}

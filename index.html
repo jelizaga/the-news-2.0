@@ -60,6 +60,12 @@
 		<!-- Main: The list of articles will populate this main content div. -->
 		<main>
 
+			<div class="sort-by">
+				<text>
+					Region:
+				</text>
+			</div>
+
 			<!-- Buttons for region selection. -->
 			<div id="region-select-background">
 				<ul id="region-select">
@@ -82,44 +88,68 @@
 						</a>
 					</li>
 				</ul>
-		</div>
+			</div>
+
+			<div class="sort-by">
+				<text>
+					Topic:
+				</text>
+			</div>
 
 			<!-- Buttons for topic selection. -->
-			<ul id="topic-select">
+			<ul class="topic-select">
 				<li>
 					<a href="">
-						<div>
+						<div id="politics">
 							Politics
 						</div>
 					</a>
 				</li>
 				<li>
 					<a href="">
-						<div>
+						<div id="business">
 							Business
 						</div>
 					</a>
 				</li>
 				<li>
 					<a href="">
-						<div>
+						<div id="health">
 							Health
+						</div>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="topic-select">
+				<li>
+					<a href="">
+						<div id="science">
+							Science
 						</div>
 					</a>
 				</li>
 				<li>
 					<a href="">
-						<div>
+						<div id="technology">
+							Technology
+						</div>
+					</a>
+				<li>
+					<a href="">
+						<div id="weather">
 							Weather
 						</div>
 					</a>
 				</li>
 			</ul>
 
-			<form>
-				<input id="search-bar" type="text" placeholder="Search...">
-				<input type="button" value="Search">
-			</form>
+			<div id="search-div">
+				<form>
+					<input id="search-bar" type="text" placeholder="Search...">
+					<input type="button" value="Search">
+				</form>
+			</div>
 
 			<!-- Articles are sorted below. -->
 			<div class="headline">
