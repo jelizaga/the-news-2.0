@@ -223,6 +223,18 @@
 			padding-right: 0px;
 		}
 
+		.article-content li {
+			margin-top: 4px;
+		}
+
+		.sub-content {
+			list-style: none;
+		}
+
+		.sub-content li {
+			margin-top: 4px;
+		}
+
 	/* HEADLINES: */
 
 		.headline-img {
@@ -419,6 +431,30 @@
 			font-size: 14px;
 			text-decoration: none;
 			text-shadow: 1px 1px 0px #0e0e11;
+		}
+
+		#politics {
+			background-image: url("topic-img/pol-sml.png");
+		}
+
+		#science {
+			background-image: url("topic-img/sci-sml.png");
+		}
+
+		#business {
+			background-image: url("topic-img/bus-sml.png");
+		}
+
+		#health {
+			background-image: url("topic-img/hlth.png");
+		}
+
+		#technology {
+			background-image: url("topic-img/tech-sml.png");
+		}
+
+		#weather {
+			background-image: url("topic-img/wthr-sml.png");
 		}
 
 	/* HEADLINES: */
