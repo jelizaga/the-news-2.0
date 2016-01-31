@@ -1,3 +1,11 @@
+/*
+	Joel Elizaga
+	INFO 360 A
+	Winter 2016
+
+	BASED CSS GOD.
+*/
+
 /* FONTS: */
 
 	@import url("https://fonts.googleapis.com/css?family=Righteous");
@@ -44,8 +52,14 @@
 
 		h2 {
 			font-family: "Righteous", sans-serif;
-			font-size: 20px;
+			font-size: 16px;
 			text-align: center;
+		}
+
+		h3 {
+			font-family: "Righteous", sans-serif;
+			font-size: 16px;
+			margin-bottom: 0px;
 		}
 
 		#title-version {
@@ -69,6 +83,7 @@
 
 		#search-div {
 			margin-top: 20px;
+			margin-bottom: 20px;
 		}
 
 		form {
@@ -201,10 +216,11 @@
 			padding: 40px;
 		}
 
-		.article-content {
-			margin-left: 40px;
-			margin-right: 40px;
-			margin-top: 40px;
+		.article-content, .source-list {
+			padding-top: 0px;
+			padding-bottom: 10px;
+			padding-left: 0px;
+			padding-right: 0px;
 		}
 
 	/* HEADLINES: */
@@ -263,6 +279,19 @@
 			margin-bottom: 14px;
 		}
 
+	/* ARTICLES: */
+
+		.article {
+			padding: 40px;
+		}
+
+		.article-content, .article-content {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
 }
 
 /* SMALL+ SCREENS: */
@@ -273,6 +302,10 @@
 
 		h2 {
 			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 20px;
 		}
 
 	/* HEADER: */
@@ -394,6 +427,19 @@
 			width: 400px;
 			height: 229px;
 			margin-bottom: 20px;
+		}
+
+	/* ARTICLES: */
+
+		.article {
+			padding: 40px;
+		}
+
+		.article-content, .source-list {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 
 }
@@ -531,6 +577,19 @@
 			height: 286px;
 		}
 
+	/* ARTICLES: */
+
+		.article {
+			padding: 40px;
+		}
+
+		.article-content, .source-list {
+			padding-top: 10px;
+			padding-bottom: 0px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
 }
 
 
@@ -538,6 +597,12 @@
 /* DESKTOP SCREENS: */
 
 @media screen and (min-width: 1000px) {
+
+	/* BODY: */
+
+		h3 {
+			padding-left: 40px;
+		}
 
 	/* HEADER: */
 
@@ -575,6 +640,19 @@
 		.headline-img {
 			height: 400px;
 			width: 700px;
+		}
+
+	/* ARTICLES: */
+
+		.article {
+			padding: 40px;
+		}
+
+		.article-content, .source-list {
+			padding-top: 20px;
+			padding-bottom: 10px;
+			padding-left: 80px;
+			padding-right: 80px;
 		}
 
 }
