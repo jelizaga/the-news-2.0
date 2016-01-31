@@ -47,15 +47,17 @@
 	<body>
 
 		<!-- Header: Contains title, etc. -->
-		<header>
+		<a href="index.html">
+			<header>
 
-			<h1>
-				The News <text id="title-version">v2.0</text>
-			</h1>
-			<text id="sub-title">
-			</text>
+				<h1>
+					The News <text id="title-version">v2.0</text>
+				</h1>
+				<text id="sub-title">
+				</text>
 
-		</header>
+			</header>
+		</a>
 
 		<!-- Main: The list of articles will populate this main content div. -->
 		<main>
@@ -144,6 +146,12 @@
 				</li>
 			</ul>
 
+			<div class="sort-by">
+				<text>
+					Search:
+				</text>
+			</div>
+
 			<div id="search-div">
 				<form>
 					<input id="search-bar" type="text" placeholder="Search...">
@@ -151,15 +159,48 @@
 				</form>
 			</div>
 
-			<!-- Articles are sorted below. -->
-			<div class="headline">
-				<h2>
-					The News 2.0 - Prototyping
-				</h2>
-				<text class="sub-headline">
-					posted January 29, 2016
+			<div class="sort-by">
+				<text>
+					Articles:
 				</text>
 			</div>
+
+			<!-- Articles are sorted below. -->
+			<div id="headlines">
+				<div class="headline">
+					<a href="articles/politics/prep-school-suspension.html">
+						<h2>
+							San Francisco Prep School Suspends 14 Students For Attending Race-Themed
+								Party
+						</h2>
+					</a>
+					<a href="articles/politics/prep-school-suspension.html">
+						<img class="headline-img" 
+							src="articles/politics/politics-img/prep-school-suspension.png" 
+							alt="St. Ignatius College Preparatory" />
+					</a>
+					<text class="sub-headline">
+						posted January 29, 2016 in Politics
+					</text>
+				</div>
+
+				<div class="headline">
+					<a href="articles/politics/satanic-phoenix.html">
+						<h2>
+							Satanic Group To Lead Phoenix City Council In Prayer
+						</h2>
+					</a>
+					<a href="articles/politics/satanic-phoenix.html">
+						<img class="headline-img" 
+							src="articles/politics/politics-img/satanic-phoenix.png" 
+							alt="Phoenix, AZ" />
+					</a>
+					<text class="sub-headline">
+						posted January 29, 2016 in Politics
+					</text>
+				</div>
+			</div>
+
 
 		</main>
 
